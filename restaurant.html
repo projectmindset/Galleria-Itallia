@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria Italia</title>
+
+    <style>
+        
+        h1{
+            font-size:xx-large;
+            color : white;
+            margin: 20px;
+        }
+
+        h2{
+            text-align: center;
+            padding-bottom: 20px;
+            color: white;
+        }
+
+        body{
+            margin:0%;
+            /* background-image: url(../Desktop/bg.jpg);   
+            height: 20%;
+            width: 100%; */
+            
+        }
+
+        .container1{
+            align-items: center;
+            padding: 12px;
+            margin: 20px;
+            display : flex;
+        }
+
+        .first{
+            width: 320px;
+            border: 1.5px solid black;
+            background-color: white;
+            padding: 18px 18px 2px 18px;
+            margin: 12px;   
+        }
+
+        #riso{
+            width:320px;
+        }
+
+        #caption{
+            text-align: center;
+            margin-top: 4px;
+        }
+
+        #content{
+            float: right;
+            font-size: medium;
+            text-align: right;
+            color: white;
+            position: relative;
+            bottom: 70px;
+            display:inline-block;
+            padding: 12px;
+        }
+
+        #header{
+            padding: 20px;
+            /* width: auto; */
+            height: 490px;
+            background-image: url(../Desktop/bg.jpg);
+            outline: 2px solid green;
+            background-position:top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #round{
+            width:400px;
+            height:400px;
+            float: right;
+            border-radius: 50%;
+            position: relative;
+            left: 30%;
+            top: 30%;
+        }
+
+        #paragraph{
+            color: white;
+            text-align: center;
+            font-size:x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            float: left;
+            position:relative;
+            top: 70px;
+            left: 280px;
+            /* display: flex;
+            flex-wrap: wrap;
+            align-items: center; */
+            
+            
+        }
+
+        #trisha{
+            display:inline-block;
+            align-content: center;
+            
+        }
+
+        button{
+            background-color: white;
+            color:black;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            padding: 15px;
+            font-size:16px;
+            display: inline-block;
+            position: relative;
+            top: 300px;
+            right: 17%;   
+        }
+
+        button:hover{
+            background-color: antiquewhite;
+        }
+
+        #read{
+            padding-top: 12px;
+            text-align: center;
+            font-weight: bold;
+            font-size:xx-large;
+            color: black;
+            font-family: cursive;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .containment{
+            width:300px;
+            height:300px;
+            padding: 25px;
+            margin: 12px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        #picture{
+            height: 300px;
+            width:300px;
+            border-radius: 50%;  
+        }
+
+        #contentp{
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .containment2{
+            width:300px;
+            height:300px;
+            padding: 50px;
+            margin: 24px;
+            border-radius: 50%;
+            display:inline-block;
+        }
+
+        #picture2{
+            height: 300px;
+            width:300px;
+            border-radius: 50%; 
+        }
+
+        #contentq{
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .containment3{
+            width:300px;
+            height:300px;
+            padding: 50px;
+            margin: 24px;
+            border-radius: 50%;
+            display:inline-block;
+        }
+
+        #picture3{
+            height: 300px;
+            width:300px;
+            border-radius: 50%; 
+        }
+
+        #contentr{
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .containment,.containment2,.containment3{
+            display: inline-block;
+            padding: 30px;
+            align-items: center;
+            /* display: flex;
+            flex-wrap: wrap; */
+        }
+
+        .secondrow,.secondrow2{
+            display: inline-block;
+            align-content: center;
+            padding: 30px;
+            justify-content: space-around; ;
+            margin:auto;
+            display: flex;
+        }
+
+        #pizza{
+            height: 300px;
+            width:300px;
+            border-radius: 50%; 
+        }
+
+        #contentpizza{
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        #lavacake{
+            height: 300px;
+            width:300px;
+            border-radius: 50%; 
+        }
+
+        #contentlava{
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .secondrow{
+            width:300px;
+            height:300px;
+            padding: 50px;
+            margin: 24px;
+            border-radius: 50%;
+            display:inline-block;
+        }
+
+        .secondrow2{
+            width:300px;
+            height:300px;
+            padding: 50px;
+            margin: 24px;
+            border-radius: 50%;
+            display:inline-block;
+        }
+
+        .rowtwo{
+            width: 90%;
+            margin-left:auto;
+            justify-content: center;
+            align-items: center;
+            display: flexbox;
+        }
+
+        #footer{
+            background-color: blanchedalmond;
+            width: auto;
+            /* height: 400px; */
+            background-position: cover;
+            background-size: 100%;
+            background-position: center;
+            margin-top: 20px;
+        }
+
+        #footerheader{
+            text-align: center;
+            /* font-size: larger; */
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+
+        #reviewone{
+            width: 300px;
+            height: 300px;
+            color: black;
+            text-align: center;
+        }
+
+        #reviewtwo{
+            width: 300px;
+            height: 300px;
+            color: black;
+            text-align: center;
+        }
+
+        #reviewthree{
+            width: 300px;
+            height: 300px;
+            color: black;
+            text-align: center;
+        }
+
+        #reviewone, #reviewtwo, #reviewthree{
+            display: inline-block;
+            padding: 25px;
+            justify-content: center;
+            margin-right: auto;
+            display: flexbox;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Galleria Italia</h1>
+        <p id="content">Recipes</p>
+        <p id="content">About</p>
+        <p id="content">Login</p>
+    
+        <div id="trisha">
+            <p id="paragraph">Welcome to Galleria Itallia.<br>
+            Home to the best Italian Dishes in Tanzania.<br>
+            Our extensive and stylish cuisine ranges from risotto, fried rice,<br>
+            cappucino, croissants, french toast, pizza, parsley, and a wide range<br>
+            range of delicious, tasty, assortments of delicasies. Scroll down for<br>
+            details</p>
+            <button type="button">Order Now</button>
+            <!-- <img id="round" src="../Desktop/grown.jpg"> -->
+        </div>
+    </div>
+
+
+    <h2 id="read">Our Specials</h2>
+
+    
+    <div class="containment">
+        <img id="picture" src="../Desktop/broad.jpeg">
+        <div id="contentp">
+            <p>Itallian Croissant.<br>
+                a style of viennoiserie pastries,<br>
+                which of course relates back to the Austrian city of Vienna,<br>
+                otherwise known as the birthplace of croissants</p>
+            </div>
+    </div>
+
+    <div class="containment2">
+        <img id="picture2" src="../Desktop/acaibowl.jpg">
+        <div id="contentq">
+            <p>Acai Bowl.<br>
+            Made from acai berries and often additional fruits, then topped with ingredients like<br>
+            fruit, nuts, seeds, and granola. They're nutrient dense and rich in antioxidants.</p>
+        </div>
+    </div>
+
+    <div class="containment3">
+        <img id="picture3" src="../Desktop/rissotto.jpg">
+        <div id="contentr">
+            <p>Rissotto.<br>
+            At its most classic and introductory level risotto is simple —<br>
+            some butter, onions, maybe wine, short- or medium-grain rice, and broth, finished with Parmesan.<br>
+            It is elegant without being complex.</p>
+        </div>
+    </div>
+
+    <div class="rowtwo">
+        <div class="secondrow">
+            <img id="pizza" src="../Desktop/pizza.jpg">
+            <div id="contentpizza">
+                <p>Pizza.<br>
+                dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of<br>
+                olive oil, oregano, tomato, olives, mozzarella or other cheese</p>
+            </div>
+        </div>
+
+        <div class="secondrow2">
+            <img id="lavacake" src="../Desktop/lavacake.jpg">
+            <div id="contentlava">
+                <p>Molten Lava Cake.<br>
+                a dessert that consists of a chocolate cake with a liquid chocolate core.<br>
+                It is named for that molten center,and it is also known as chocolate coulant ("flowing")</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="footer">
+        <h2 id="footerheader">Customer Reviews</h2>
+        <p id="reviewone">
+            This cozy restaurant has left the best impressions!<br>
+            Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert.<br>
+            I recommend to everyone! I would like to come back here again and again.
+        </p>
+
+        <p id="reviewtwo">
+            First time in Galleria Italia and YOU have to go!<br>
+            It’s the cutest little spot with amazing food. IT WAS FIRE!!<br>
+            The service we received was so amazing and we will definitely be back again.<br>
+            They made us feel welcomed and gave us an amazing experience.
+        </p>
+
+        <p id="reviewthree">
+            It’s a great experience.<br>
+            The ambiance is very welcoming and charming.<br>
+            Amazing wines, food and service.<br> 
+            Staff are extremely knowledgeable and make great recommendations.
+        </p>
+    </div> -->
+
+
+</body>
+</html>
